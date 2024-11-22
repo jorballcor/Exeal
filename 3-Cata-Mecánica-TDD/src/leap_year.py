@@ -13,11 +13,3 @@ def is_leap_year(year: int) -> bool:
     else:
         return False
     
- #Once we got 3 particular cases -> General rule (line 11)
- #not before than 3 particular cases  
- 
- #Then see if test pass
- #If test pass, you can commit changes
- 
- #Refactor conducted from GREEN to GREEN
- #We didnt broke anything

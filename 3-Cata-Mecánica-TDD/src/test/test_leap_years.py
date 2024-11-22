@@ -1,17 +1,14 @@
 from src.leap_year import is_leap_year
-# from src import main.is_leap_year
+import pytest
 
-def test_2008_is_leap_year_bc_is_divisible_by_4():
-    year = 2008
+@pytest.mark.parametrize("year, expected", [
+    (2008, True),
+    (2012, True),
+    (2016, True)
+])
+def test_years_divisible_by_4_are_leap_years(year, expected):
+    """Parametric test for checking leap years."""
     leap_year = is_leap_year(year)
-    assert leap_year == True  # noqa: E712
-    
-def test_2012_is_leap_year_bc_is_divisible_by_4():
-    year = 2012
-    leap_year = is_leap_year(year)
-    assert leap_year == True  # noqa: E712
-    
-def test_2016_is_leap_year_bc_is_divisible_by_4():
-    year = 2016
-    leap_year = is_leap_year(year)
-    assert leap_year == True  # noqa: E712
+    assert leap_year == expected  # noqa: E712
+
+# Rm multiplicity of test: add parametric test instead
