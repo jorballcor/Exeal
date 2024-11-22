@@ -11,4 +11,7 @@ def test_years_divisible_by_4_are_leap_years(year, expected):
     leap_year = is_leap_year(year)
     assert leap_year == expected  # noqa: E712
 
-# Rm multiplicity of test: add parametric test instead
+def test_1700_is_leap_year_bc_is_divisible_by_4():
+    year = 1700
+    leap_year = is_leap_year(year)
+    assert leap_year == False  # noqa: E712

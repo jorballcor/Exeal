@@ -8,6 +8,8 @@ def is_leap_year(year: int) -> bool:
     Returns:
         bool: True or False
     """
+    if (year % 100) == 0:
+        return False
     if (year % 4) == 0:
         return True
     else:
