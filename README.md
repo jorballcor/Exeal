@@ -1,4 +1,4 @@
-ata de Metodología TDD
+Cata de Metodología TDD
 
 tarea
 escribir una función que determine si un año es bisiesto o no, de acuerdo con las siguientes reglas:

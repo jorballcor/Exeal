@@ -21,4 +21,9 @@ def test_years_divisible_by_100_are_NOT_leap_years(year, expected):
     """Parametric test for checking leap years."""
     leap_year = is_leap_year(year)
     assert leap_year == expected  # noqa: E712
-    
+
+
+def test_year_2000_is_leap_year_bc_is_divisible_by_400():
+    year = 2000
+    leap_year = is_leap_year(year)
+    assert leap_year == True  # noqa: E712   
