@@ -33,4 +33,15 @@ def test_years_divisible_by_400_are_leap_years(year, expected):
     leap_year = is_leap_year(year)
     assert leap_year == expected  # noqa: E712
 
- 
+@pytest.mark.parametrize("year, expected", [
+    (2017, False),
+    (2018, False),
+    (2019, False),
+])
+def test_years_not_divisible_by_4_are_NOT_leap_years(year, expected):
+    """Parametric test for checking leap years."""
+    leap_year = is_leap_year(year)
+    assert leap_year == expected  # noqa: E712
+
+ #Now we write a parametric test from the beginning
+ #as we now how the exercice goes
