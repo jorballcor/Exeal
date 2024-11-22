@@ -8,7 +8,7 @@ def is_leap_year(year: int) -> bool:
     Returns:
         bool: True or False
     """
-    if year == 2008 or year == 2012:
+    if year == 2008 or year == 2012 or 2016:
         return True
     else:
         return False
