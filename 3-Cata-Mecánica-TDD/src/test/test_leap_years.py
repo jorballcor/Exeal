@@ -15,3 +15,13 @@ def test_1700_is_leap_year_bc_is_divisible_by_4():
     year = 1700
     leap_year = is_leap_year(year)
     assert leap_year == False  # noqa: E712
+
+def test_1800_is_leap_year_bc_is_divisible_by_4():
+    year = 1800
+    leap_year = is_leap_year(year)
+    assert leap_year == False  # noqa: E712
+
+def test_1900_is_leap_year_bc_is_divisible_by_4():
+    year = 1900
+    leap_year = is_leap_year(year)
+    assert leap_year == False  # noqa: E712
